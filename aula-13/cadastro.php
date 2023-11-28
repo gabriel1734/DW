@@ -13,7 +13,7 @@
       $stmt->bindParam(':email', $email);
       $stmt->bindParam(':senha', $senha);
       $stmt->execute();
-      header('Location: login.php');
+      header('Location: login.php?cadastro=1');
     } catch (PDOException $e){
       echo $e->getMessage();
     }
